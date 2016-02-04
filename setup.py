@@ -2,7 +2,7 @@
 
 import os
 from setuptools import setup, find_packages
-__version__ = __import__('python_structure').__version__
+from structure import __version__
 
 
 # Utility function to read the README file.
@@ -14,16 +14,16 @@ def read(fname):
 
 # the setup
 setup(
-    name='python_structure',
+    name='structure',
     version=__version__,
     description='An demonstration of PyPi.',
-    long_description=read('README.md'),
-    url='https://github.com/kengz/python_structure',
+    long_description=read('README'),
+    url='https://github.com/kengz/structure',
     author='kengz',
     author_email='kengzwl@gmail.com',
     license='MIT',
     keywords='example pypi tutorial',
-    packages=find_packages(exclude=('docs', 'tests', 'env')),
+    packages=find_packages(exclude=('docs', 'tests', 'env', 'index.py')),
     include_package_data=True,
     install_requires=[
     ],
@@ -32,9 +32,5 @@ setup(
     'docs': [],
     'testing': [],
     },
-    classifiers=[
-    'Intended Audience :: Developers',
-    'Topic :: Utilities',
-    'Programming Language :: Python'
-    ],
+    classifiers=[],
     )
