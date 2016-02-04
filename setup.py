@@ -17,7 +17,7 @@ setup(
     name='structure',
     version=__version__,
     description='An demonstration of PyPi.',
-    long_description=read('README'),
+    # long_description=read('README'),
     url='https://github.com/kengz/structure',
     author='kengz',
     author_email='kengzwl@gmail.com',
