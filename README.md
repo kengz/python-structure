@@ -18,7 +18,7 @@ source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bash_profile
 
 ### Project creation
 
-I'm assuming my PyPI package name is `structure`. Also, don't use non-alphabetic characters; for exampl PyPI will fuck up '-' and '_'.
+I'm assuming my PyPI package name is `structure`. Also, don't use non-alphabetic characters; for exampl PyPI will not allow '-' and '_'.
 
 - create a project on Github, add `README, .gitignore, LICENSE`. Clone your git repo locally.
 - update your `.gitignore` (see example) and remove `.md` from `README.md` cuz PyPI can't even
